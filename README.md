@@ -9,8 +9,8 @@ Timezone json
   - Use *GitHub Actions*
 
 ## example use
-```json
-$ cat timezone.json | jq .
+*`$ cat timezone.json | jq .`*
+```JSON
 {
   "version": "2019c",
   "timezones": [

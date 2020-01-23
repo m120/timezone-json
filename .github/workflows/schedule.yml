@@ -32,6 +32,9 @@ jobs:
       run: |
         rm .gitignore
         rm timezone_json.bash
+        rm -rf .github/workflows
+        rm LICENSE
+        rm README.md
       shell: bash
 
     - name: github_pages_deploy

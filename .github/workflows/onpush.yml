@@ -33,7 +33,7 @@ jobs:
       run: |
         rm .gitignore
         rm timezone_json.bash
-        rm .github/workflows
+        rm -rf .github/workflows
         rm LICENSE
         rm README.md
       shell: bash
