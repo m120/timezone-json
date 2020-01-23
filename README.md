@@ -1,6 +1,8 @@
 # timezone-json
 Timezone json
 
+https://m120.github.io/timezone-json/timezone.json
+
 ## Desc.
 - Source timezone list is IANA's zone file.
   - https://data.iana.org/time-zones/tzdb/zone.tab
