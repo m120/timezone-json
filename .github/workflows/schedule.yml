@@ -1,0 +1,42 @@
+name: timezone json schedule
+
+on:
+  schedule:
+    - cron:  '15 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: Execute shell
+      run: |
+        bash ./timezone_json.bash
+        date >> date.txt
+      shell: bash
+
+    - name: commit 
+      run: |
+        git config --global user.name ${{ secrets.git_user_name }}
+        git config --global user.email ${{ secrets.git_user_email }}
+        git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git checkout "${GITHUB_REF:11}"
+        git add -A
+        git commit -am "Automated report $(date)"
+        git push
+
+    - name: Delete unnecessary files
+      run: |
+        rm .gitignore
+        rm timezone_json.bash
+      shell: bash
+
+    - name: github_pages_deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./
