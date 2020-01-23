@@ -8,8 +8,20 @@ Timezone json
 - This list made by every 6 Hours.
   - Use *GitHub Actions*
 
-## example use
-*`$ cat timezone.json | jq .`*
+## Example Use.
+- Web API
+  ```Shell
+    $ curl https://m120.github.io/timezone-json/timezone.json
+    or
+    $ curl https://m120.github.io/timezone-json/timezone.json | jq .
+  ```
+
+- File
+  ```Shell
+    $ cat timezone.json | jq .
+  ```
+
+## json
 ```JSON
 {
   "version": "2019c",
