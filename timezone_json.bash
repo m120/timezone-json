@@ -3,8 +3,9 @@
 zone_url=https://data.iana.org/time-zones/tzdb/zone.tab
 zone_version_url=https://data.iana.org/time-zones/tzdb/version
 
-tmpfile="./tz.tmp"
-jsonfile="./tz.json"
+filename="timezone"
+tmpfile="./${filename}.tmp"
+jsonfile="./${filename}.json"
 : > "${jsonfile}"
 
 curl -s -o "${tmpfile}" "${zone_url}"

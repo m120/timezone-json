@@ -2,7 +2,7 @@ name: timezone json schedule
 
 on:
   schedule:
-    - cron:  '15 * * * *'
+    - cron:  '00 0-23/6 * * *'
 
 jobs:
   build:
