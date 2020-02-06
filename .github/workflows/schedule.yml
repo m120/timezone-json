@@ -15,7 +15,6 @@ jobs:
     - name: Execute shell
       run: |
         bash ./timezone_json.bash
-        date >> date.txt
       shell: bash
 
     - name: commit 
