@@ -15,7 +15,6 @@ jobs:
     - name: Execute shell
       run: |
         bash ./timezone_json.bash
-        date >> date.txt
       shell: bash
 
     - name: commit 
@@ -25,7 +24,7 @@ jobs:
         git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git checkout "${GITHUB_REF:11}"
         git add -A
-        git diff-index --quiet HEAD || git commit -am "Automated report $(date)" || git push
+        git diff-index --quiet HEAD || git commit -am "Automated report $(date)" && git push
 
     - name: Delete unnecessary files
       run: |
