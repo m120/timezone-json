@@ -1,5 +1,5 @@
 {
-  "version":"2019c",
+  "version":"2020a",
   "timezones":[
 	{"region":"Europe","zone1":"Andorra","zone2":"","code":"AD","tz":"Europe/Andorra","coordinates":"+4230+00131"},
 	{"region":"Asia","zone1":"Dubai","zone2":"","code":"AE","tz":"Asia/Dubai","coordinates":"+2518+05518"},
