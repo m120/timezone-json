@@ -168,7 +168,7 @@
 	{"region":"Europe","zone1":"Guernsey","zone2":"","code":"GG","tz":"Europe/Guernsey","coordinates":"+492717-0023210"},
 	{"region":"Africa","zone1":"Accra","zone2":"","code":"GH","tz":"Africa/Accra","coordinates":"+0533-00013"},
 	{"region":"Europe","zone1":"Gibraltar","zone2":"","code":"GI","tz":"Europe/Gibraltar","coordinates":"+3608-00521"},
-	{"region":"America","zone1":"Godthab","zone2":"","code":"GL","tz":"America/Godthab","coordinates":"+6411-05144"},
+	{"region":"America","zone1":"Nuuk","zone2":"","code":"GL","tz":"America/Nuuk","coordinates":"+6411-05144"},
 	{"region":"America","zone1":"Danmarkshavn","zone2":"","code":"GL","tz":"America/Danmarkshavn","coordinates":"+7646-01840"},
 	{"region":"America","zone1":"Scoresbysund","zone2":"","code":"GL","tz":"America/Scoresbysund","coordinates":"+7029-02158"},
 	{"region":"America","zone1":"Thule","zone2":"","code":"GL","tz":"America/Thule","coordinates":"+7634-06847"},
